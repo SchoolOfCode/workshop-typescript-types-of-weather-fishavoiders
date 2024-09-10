@@ -8,8 +8,11 @@ create a basic app
         - npm run dev🐟
     - install react🐟
     - check to make sure it works🐟
+    
+Follow "Use Supabase Auth with Next.js" guide
 
 connect app to supabase
+- Follow connect to Github guide 
 
 Test your app to see if you can sign up 
 Test your app to see if you can login
@@ -17,3 +20,9 @@ Test your app to see if you can logout
 Check if you can find a new user in your database
 
 Plan step 2
+
+# Upon first pull 🐟🐟/🐟🐟
+- nav to vite dir
+-`npm install`
+-`npm run dev`
+- check it works
