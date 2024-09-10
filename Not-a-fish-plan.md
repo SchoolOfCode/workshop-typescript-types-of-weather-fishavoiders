@@ -8,11 +8,10 @@ create a basic app
         - npm run dev🐟
     - install react🐟
     - check to make sure it works🐟
-    
-Follow "Use Supabase Auth with Next.js" guide
 
 connect app to supabase
-- Follow connect to Github guide 
+    - Follow connect to Github guide 
+    - Follow "Use Supabase Auth with react" guide
 
 Test your app to see if you can sign up 
 Test your app to see if you can login
