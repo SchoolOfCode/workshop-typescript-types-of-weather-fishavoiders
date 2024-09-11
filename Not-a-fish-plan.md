@@ -11,8 +11,8 @@ create a basic app 🐟
 
 ## Upon first pull 
 - nav to vite dir
--`npm install`
--`npm run dev`
+- `npm install`
+- `npm run dev`
 - check it works
 
 # Stage 2
@@ -24,9 +24,10 @@ App
 │   │   ├── Textbox
 │   │   └── Button
 │   ├── Fishey weather content
-│   │   ├── Section1
-│   │   ├── Section2
-│   │   └── Section3
+│   │   ├── dt_txt
+│   │   ├── weather.main
+│   │   ├── weather.description
+│   │   └── main.sea_level
 └── Footer
 
 *know, manage, allow, show*
@@ -42,6 +43,10 @@ Textbox - user imput,
 ## investigate API in postman
 
 ## different APi as a stretch (fish/oceans?)
+
+## more than one forecast as a stretch
+
+## selecting city as a stretch
 
 ## do some coding??? probably in App.tsx
 - remove boilerplate stuff
