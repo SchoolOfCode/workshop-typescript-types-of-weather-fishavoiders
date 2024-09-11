@@ -7,12 +7,44 @@ function App() {
   const [fishSearch, setFishSearch] = useState("")
 
   function handleFishChange(event) {
-    setFishSearch(event.target.value)
+    setFishSearch(event.target.value);
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(event.target.value);
+    console.log(fishSearch);
+    let cityData = await getCity(fishSearch);
+    console.log(cityData);
+    let weatherData = await getWeather(cityData[0].lat, cityData[0].lon);
+    console.log(weatherData);
+  }
+
+  async function getCity(query) {
+    try {
+      const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=1&appid=70bba6d533205abf96963d03760d52e6`, {
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('There was a problem fetching the city:', error);
+    }
+  }
+
+  async function getWeather(lat, lon) {
+    try {
+      const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=70bba6d533205abf96963d03760d52e6`, {
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('There was a problem fetching the weather:', error);
+    }
   }
 
   return (
