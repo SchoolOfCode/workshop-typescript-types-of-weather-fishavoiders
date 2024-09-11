@@ -1,4 +1,4 @@
-## Stage 1 🐟
+# Stage 1 🐟
 
 create a basic app 🐟
     - install npm - npm init🐟
@@ -15,7 +15,29 @@ create a basic app 🐟
 -`npm run dev`
 - check it works
 
+# Stage 2
 ## component tree
+App
+├── Header
+├── Main
+│   ├── Form
+│   │   ├── Textbox
+│   │   └── Button
+│   ├── Fishey weather content
+│   │   ├── Section1
+│   │   ├── Section2
+│   │   └── Section3
+└── Footer
+
+*know, manage, allow, show*
+
+App - allow: state storage.  show: Header, Main, Footer
+Header - allow: potential navigation changes
+Main - know: formData props, apiData props. 
+
+Main - 
+
+Textbox - user imput, 
 
 ## investigate API in postman
 
@@ -24,5 +46,6 @@ create a basic app 🐟
 ## do some coding??? probably in App.tsx
 - remove boilerplate stuff
 - use the API
-- create button components
-- text input components
+- create components
+- create state
+    - Form 
