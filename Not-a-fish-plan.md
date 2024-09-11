@@ -1,6 +1,6 @@
-Sign up for a Supabase account and log in to the Supabase dashboard🐟
-read a guide🐟
-create a basic app
+## Stage 1 🐟
+
+create a basic app 🐟
     - install npm - npm init🐟
     - install vite🐟 npm create vite@latest
         - cd vite-project🐟
@@ -9,19 +9,20 @@ create a basic app
     - install react🐟
     - check to make sure it works🐟
 
-connect app to supabase
-    - Follow connect to Github guide 
-    - Follow "Use Supabase Auth with react" guide
-
-Test your app to see if you can sign up 
-Test your app to see if you can login
-Test your app to see if you can logout
-Check if you can find a new user in your database
-
-Plan step 2
-
-# Upon first pull 🐟🐟/🐟🐟
+## Upon first pull 
 - nav to vite dir
 -`npm install`
 -`npm run dev`
 - check it works
+
+## component tree
+
+## investigate API in postman
+
+## different APi as a stretch (fish/oceans?)
+
+## do some coding??? probably in App.tsx
+- remove boilerplate stuff
+- use the API
+- create button components
+- text input components
