@@ -54,6 +54,11 @@ Textbox - user imput,
 - create components
 - create state
     - Form 
+- on form change handler
+- handle for submit
+- fetch request lat and long
+- fetch request weather
+
 
 Form Plan
     - user input field

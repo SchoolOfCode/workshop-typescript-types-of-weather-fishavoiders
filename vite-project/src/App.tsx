@@ -4,11 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [fishSearch, setFishSearch] = useState("")
+
+  function handleFishChange(event) {
+    setFishSearch(event.target.value)
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("fish working");
+    console.log(event.target.value);
   }
 
   return (
@@ -18,7 +22,10 @@ function App() {
       </header>
       <main>
         <form onSubmit={handleSubmit}>
-          <input name="query" />
+          <input 
+              value={fishSearch}
+              name="query"
+              onChange={(event) => handleFishChange(event)}/>
           <button type="submit">Avoid</button>
         </form>
         <section id="content">
