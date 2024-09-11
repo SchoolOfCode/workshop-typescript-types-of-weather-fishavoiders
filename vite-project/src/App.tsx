@@ -21,6 +21,9 @@ function App() {
     //console.log(cityData);
     let weatherData = await getWeather(cityData[0].lat, cityData[0].lon);
     setSeaLevel(weatherData.list[0].main.sea_level);
+    setDateTime(weatherData.list[0].dt_txt);
+    setWeatherMain(weatherData.list[0].weather[0].main);
+    setWeatherDesc(weatherData.list[0].weather[0].description);
   }
 
   async function getCity(query:string) {
@@ -65,11 +68,11 @@ function App() {
           <button type="submit">Avoid</button>
         </form>
         <section id="content">
-          <p>dt_txt {seaLevel}</p>
-          <p>weather.main {seaLevel}</p>
-          <p>weather.description {seaLevel}</p>
-          <p>Main sea level: {seaLevel}</p>
-          <p>{parseInt(seaLevel) < 1010 ? `Fantastic, sea level is low - you won't be in contact with any fish` : `Bad news, sea level is high - you may come in contact with with fish`}</p>
+          <p>{dateTime}</p>
+          <p>{weatherMain}</p>
+          <p>{weatherDesc}</p>
+          <p>{seaLevel ? `Main sea level: ` : ``}{seaLevel}</p>
+          <p>{seaLevel ? parseInt(seaLevel) < 1010 ? `Fantastic, sea level is low - you won't be in contact with any fish` : `Bad news, sea level is high - you may come in contact with with fish` : ``}</p>
         </section>
       </main>
       <footer>
