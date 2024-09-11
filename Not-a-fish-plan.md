@@ -23,7 +23,7 @@ App
 │   ├── Form
 │   │   ├── Textbox
 │   │   └── Button
-│   ├── Fishey weather content
+│   ├── Fish weather content
 │   │   ├── dt_txt
 │   │   ├── weather.main
 │   │   ├── weather.description
@@ -38,7 +38,7 @@ Main - know: formData props, apiData props.
 
 Main - 
 
-Textbox - user imput, 
+Textbox - user input, 
 
 ## investigate API in postman
 

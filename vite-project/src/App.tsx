@@ -10,11 +10,11 @@ function App() {
   const [weatherMain, setWeatherMain] = useState("")
   const [weatherDesc, setWeatherDesc] = useState("")
 
-  function handleFishChange(event:any) {
+  function handleFishChange(event: any) {
     setFishSearch(event.target.value);
   }
 
-  const handleSubmit = async (event:any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     //console.log(fishSearch);
     let cityData = await getCity(fishSearch);
@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Fish avoiding weather app</h1>
+        <h1>Fish avoiding app</h1>
       </header>
       <main>
         <form onSubmit={handleSubmit}>
@@ -69,6 +69,7 @@ function App() {
           <p>weather.main {seaLevel}</p>
           <p>weather.description {seaLevel}</p>
           <p>Main sea level: {seaLevel}</p>
+          <p>{parseInt(seaLevel) < 1010 ? `Fantastic, sea level is low - you won't be in contact with any fish` : `Bad news, sea level is high - you may come in contact with with fish`}</p>
         </section>
       </main>
       <footer>
