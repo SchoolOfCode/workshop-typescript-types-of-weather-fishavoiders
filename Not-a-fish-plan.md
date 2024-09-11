@@ -18,7 +18,7 @@ create a basic app 🐟
 # Stage 2
 ## component tree
 App
-├── Header
+├── Header 🐟
 ├── Main
 │   ├── Form
 │   │   ├── Textbox
