@@ -54,3 +54,8 @@ Textbox - user imput,
 - create components
 - create state
     - Form 
+
+Form Plan
+    - user input field
+        take string input from user
+    - submit button

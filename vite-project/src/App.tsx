@@ -6,13 +6,18 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("fish working");
+  }
+
   return (
     <>
       <header>
         <h1>Fish avoiding weather app</h1>
       </header>
       <main>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input name="query" />
           <button type="submit">Avoid</button>
         </form>
